@@ -20,10 +20,10 @@ local_css("style.css")
 
 nomi = pgeocode.Nominatim('in')
 try:
-    connection = mysql.connector.connect(host='156.67.222.211',
-                                         database='u461278309_sentrifugo_tem',
-                                         user='u461278309_temp',
-                                         password='E~]hZI&!')
+    connection = mysql.connector.connect(host='//the host id',
+                                         database='//database name',
+                                         user='//username',
+                                         password='//password')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         #print("Connected to MySQL Server version ", db_Info)
